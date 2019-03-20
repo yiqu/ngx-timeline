@@ -12,7 +12,7 @@ export class NgxTimelineComponent implements OnInit {
   @Input() events: Array<TimelineEvent>;
   @Input() timelineClass: string;
   @Input() timelineStyle: any;
-  @Input() dateFormat: string = 'yyyy-MM-dd';
+  @Input() dateFormat: string = 'MM-dd-yyyy HH:mm:ss';
 
   @ContentChild(TimelineDate) dateTemplate: TimelineDate;
   @ContentChild(TimelineHeader) headerTemplate: TimelineHeader;
